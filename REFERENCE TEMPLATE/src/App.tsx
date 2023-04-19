@@ -7,7 +7,7 @@ function App() {
     return (
         <div className={styles.App}>
             <span className={styles.Left}>REFERENCE TEMPLATE</span>
-            <h3>ChatGPT ⪤ Open-Assistant <span>~ Creative Enhancement</span></h3>
+            <h3>ChatGPT ⪤ Open-Assistant <span>~ Phuire Research Organization</span></h3>
             <div />
             <div>
                 <blockquote className={styles.Chatbox}>
