@@ -1,0 +1,156 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 1em;
+  text-align: center;
+  background-color: #493449;
+}
+
+.logo {
+  padding: 1.25em;  
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.logo.ts:hover {
+  filter: drop-shadow(0 0 2em #3178c6aa);
+}
+
+.logo.scss:hover {
+  filter: drop-shadow(0 0 2em #cc6698aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.Chatbox {
+  display: flex;
+  flex-direction: column;
+  background-color: teal;
+  width: 90%;
+  height: 100%;
+  border: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 2em #00000033;
+  text-align: left;
+  border: 2.5px dotted wheat;
+}
+
+.Option {
+  @extend .Chatbox;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-style: solid;
+  p {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+  }
+}
+
+.Red {
+  @extend .Option;
+  background-color: rgb(184, 77, 77);
+}
+.Green {
+  @extend .Option;
+  background-color: rgb(77, 136, 88);
+}
+.Blue {
+  @extend .Option;
+  background-color: rgb(77, 77, 144);
+  border-color: rgb(77, 77, 144);
+}
+.Active {
+  @extend .Option;
+  background-color: rgb(79, 79, 109);
+  border-color: greenyellow;
+}
+.Grey {
+  @extend .Option;
+  background-color: #444444;
+}
+span {
+  color: orange;
+  display: inline;
+}
+span.Target {
+  color: wheat;
+}
+span.Left {
+  float: left;
+  margin-left: 12px;
+  font-size: 12px;
+  color: red;
+}
+span.OptionLabel {
+  color: rgb(255, 255, 255);
+}
+span.Agent {
+  color: yellow;
+}
+p {
+  padding: 12px;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 2em #00000033;
+  text-align: left;
+  border: 2.5px dotted wheat;
+  margin-top: 33px;
+  padding: 12px;
+  text-align: center;
+  border-style: none;
+}
+
+textarea {
+  display: block;
+  margin-top: 4px;
+  height: 70px;
+  overflow: auto;
+  background-color: none;
+  color: wheat;
+  border: 0;
+  width: 100%;
+}
